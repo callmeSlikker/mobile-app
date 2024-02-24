@@ -1,0 +1,147 @@
+table {
+  width: 100%;
+  max-width: 400px; /* Set max-width to prevent form from expanding too much */
+  margin: 0 auto; /* Center the form */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 8px; /* Reduce padding for smaller screens */
+  text-align: left;
+  border: 1px solid #ffffff;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Menu section */
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  color: #ffffff;
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f4f4f4;
+  box-sizing: box;
+  
+}
+
+.team-member {
+  background-color: #fff;
+  
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 30px;
+  padding-left: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.team-member img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .team-member img {
+    width: 256px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-member {
+    display: flex;
+  }
+  .team-member img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+  .team-member .info {
+    flex: 1;
+  }
+}
+
+.comment-section {
+  width: 100%;
+}
+
+
+.comment {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 30px;
+  background-color: #333;
+  word-wrap: break-word;
+}
+.author {
+  border: 1px solid white;
+  font-weight: bold;
+}
+.date {
+  padding-left: 5px;
+  font-style: italic;
+  color: gray;
+
+}
+
+/* CSS for making the comment form responsive */
+.comment-form {
+  width: 100%;
+  max-width: none; /* Remove the max-width */
+  margin: 0 auto; /* Center the form */
+  th,
+  td {
+    border: none;
+  }
+}
+
+.comment-form td {
+  padding: 8px; /* Reduce padding for smaller screens */
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+  width: calc(
+    100% - 16px
+  ); /* Make text fields full width, accounting for padding and border */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.comment-form input[type="submit"] {
+  width: 48%; /* Set width for submit and reset buttons */
+  padding: 8px; /* Add padding to buttons */
+  box-sizing: border-box; /* Include padding in width */
+}
+.comment-form input[type="reset"] {
+  width: 48%; /* Set width for submit and reset buttons */
+  padding: 8px; /* Add padding to buttons */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.comment-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
